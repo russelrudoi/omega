@@ -1,0 +1,26 @@
+@import '../../assets/styles/variables';
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    min-height: 63px;
+    background-color: $color-dark-gray;
+
+    &__wrapper {
+        height: 63px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: $font-family-second;
+        color: $color-white;
+    }
+
+    &__social {
+        display: flex;
+        gap: 15px;
+    }
+}

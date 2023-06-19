@@ -1,0 +1,11 @@
+.posts {
+    margin: 50px 0 72px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    @media (max-width: 1240px) {
+        justify-content: center;
+    }
+}

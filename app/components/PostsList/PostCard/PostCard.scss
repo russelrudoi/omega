@@ -1,0 +1,106 @@
+@import '../../../assets/styles/variables';
+
+.post {
+    width: 274px;
+    height: 380px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    transition: 0.3s ease-out height;
+
+    &_show {
+        height: 441px;
+        transition: 0.3s ease-in height;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px 5px 0 0;
+    }
+
+    &__wrapper {
+        padding: 24px 21px 24px 24px;
+    }
+
+    &__title {
+        font-size: 0.938rem;
+        font-weight: 700;
+        color: $color-gray;
+    }
+
+    &__plot {
+        margin-top: 8px;
+        font-size: 0.87rem;
+        color: #79808e;
+        max-height: 55px;
+        overflow: hidden;
+        transition: 0.3s ease-out max-height;
+
+        &_show {
+            max-height: 120px;
+            overflow: hidden;
+            transition: 0.3s ease-in max-height;
+        }
+    }
+
+    &__btn-more {
+        margin-top: 16px;
+        padding-left: 12px;
+        font-weight: 700;
+        font-size: 0.81rem;
+        color: $color-sea;
+        position: relative;
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 16px;
+            background: url(../../../../public/image/arrow.png) center
+                (center / cover) no-repeat;
+            transition: 0.3s ease-out transform;
+        }
+
+        &_show {
+            &::before {
+                transform: rotate(180deg);
+                transition: 0.3s ease-in transform;
+            }
+        }
+    }
+
+    @media (min-width: 1920px) {
+        width: 380px;
+        height: 470px;
+
+        &_show {
+            height: 500px;
+        }
+
+        &__title {
+            font-size: 1.1rem;
+        }
+
+        &__plot {
+            max-height: 65px;
+            font-size: 1rem;
+
+            &_show {
+                max-height: 120px;
+            }
+        }
+
+        &__hide {
+            padding-left: 20px;
+            font-size: 1.1rem;
+
+            &::before {
+                width: 13px;
+                height: 25px;
+            }
+        }
+    }
+}
