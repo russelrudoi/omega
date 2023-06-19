@@ -7,7 +7,7 @@ import './Header.scss';
 
 const Header = () => {
     const { route } = useRouter();
-    console.log(route);
+
     return (
         <header>
             <div

@@ -4,7 +4,6 @@ import Promo from '@/app/components/Promo/Promo';
 import { fetchAllPosts } from '@/app/http/postAPI';
 
 const Home = ({ posts }) => {
-    console.log(posts);
     return (
         <MainContainer>
             <Promo />

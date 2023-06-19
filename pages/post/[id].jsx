@@ -15,7 +15,6 @@ export default function Page({ post }) {
 }
 
 export const getServerSideProps = async ({ params }) => {
-    console.log(params);
     const res = fetchPostById(params.id);
     const post = await res;
     return { props: { post } };
