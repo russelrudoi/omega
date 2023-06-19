@@ -9,5 +9,5 @@ For start application, do next:
 ### 1. `npm i`
 ### 2. `npm run dev`
 
-Click here to view the demo: [https://omega-mu.vercel.app](https://omega-hazel.vercel.app)
+Click here to view the demo: [https://omega-hazel.vercel.app](https://omega-hazel.vercel.app)
 
